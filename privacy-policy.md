@@ -1,6 +1,6 @@
 # Quiet Launcher privacy policy
 
-Last updated: 25 September 2026.
+Last updated: 30 September 2026.
 
 Quiet Launcher is a home screen for Android, published by **Coders Secret**. It has no account,
 no server, and no analytics.
@@ -17,12 +17,17 @@ Quiet reads on your device, why, and how to stop it.
 These are stored in Quiet's own private storage, which no other app can read:
 
 - Your settings: the layout, grid size, theme, clock, notification, focus and search choices.
-- The apps you chose for your home screen, and the widgets you placed.
+- The apps you chose for your home screen, any folders you made on the home screen or in the
+  app drawer and the names you gave those folders, and the widgets you placed.
 - Your last five searches, so the search screen can offer them back to you. A search is saved
   only when you open one of its results. **Clear recent searches**, shown above the search field
   when it is empty, removes them immediately.
 - If, and only if, you turn on **Keep what you missed**: a record of the last 50 notifications
   Quiet saw. See below for exactly what a record holds and how to delete it.
+
+When you make or rename a folder, Quiet can suggest a name from the category each app declares
+to Android, such as Games or Social. It reads those categories on your phone when it reads the
+list of your apps, keeps them in memory only, and never stores or sends them.
 
 Quiet's backup is switched off, and both routes out are closed explicitly: cloud backup and
 device-to-device transfer. Turning backup off alone is not enough, because on Android 12 and
@@ -36,9 +41,9 @@ You can: **Export to a file** in Customize, under Back up settings, writes your 
 you choose in the system's file picker, and **Import from a file** reads one back. Quiet does
 nothing with that file but write it or read it at the moment you ask, and sends it nowhere; where
 it goes from there, such as a cloud folder, is your choice and that service's policy. The file
-holds your settings and your chosen apps. It does not hold your widgets, your recent searches,
-the record of what you missed, or any notification, and double tap to lock is never switched on
-by an import.
+holds your settings, your chosen apps and your folders, from the home screen and the app
+drawer. It does not hold your widgets, your recent searches, the record of what you missed, or
+any notification.
 
 Uninstalling Quiet deletes all of it. Quiet has no copy anywhere else, so there is nothing to
 request and nothing to delete on request.
@@ -110,29 +115,6 @@ only, never written to storage and never sent anywhere. Turning **App shortcuts 
 in Customize stops the reading and drops what was held. When Quiet is not your default home app,
 Android does not show it other apps' shortcuts at all.
 
-## Double tap to lock
-
-Quiet can lock your phone when you double tap an empty part of Home. This is off by default, is
-offered only on Android 9 and later, and needs two separate steps from you: turning **Double tap
-to lock** on in Customize, where Quiet first explains what it needs and asks you to agree, and
-then switching on Quiet's accessibility service in your phone's system settings, which only you
-can do.
-
-Android lets an app lock the screen only through an accessibility service, so Quiet includes one
-whose only job is that. It is set up to receive no accessibility events and cannot see what is
-on your screen. It does nothing until you double tap Home, and then asks Android to lock the
-phone. It reads nothing, stores nothing, and sends nothing.
-
-When you switch the service on, Android shows its own warning about what an accessibility
-service could do in general, and asks whether to allow Quiet full control of your device. That
-warning is the same for every accessibility service, not a description of this one. Android may
-also remind you later that Quiet can view and control your screen, and you can review or switch
-off the service from that reminder.
-
-Turning **Double tap to lock** off in Customize switches the service off as well. Where Android
-does not let Quiet do that, Customize says the service is still on and takes you to the system
-settings where you can switch it off. Uninstalling Quiet removes it entirely.
-
 ## Permissions
 
 Quiet requests as little as it can:
@@ -145,13 +127,11 @@ Quiet requests as little as it can:
   only lets Quiet ask: Android shows its own confirmation, and nothing is removed unless you
   agree there.
 - **Notification access**, described above, only if you grant it.
-- **An accessibility service**, described above, only if you turn on Double tap to lock and
-  switch the service on yourself. It is used for nothing but locking the screen.
 
 Quiet does not request internet access, contacts, calendar, location, storage, microphone,
-camera, phone, SMS, or app usage statistics. It does not request permission to see every app
-installed on your device; it asks the system only about the specific kinds of app it needs to
-launch.
+camera, phone, SMS, app usage statistics, or an accessibility service. It does not request
+permission to see every app installed on your device; it asks the system only about the specific
+kinds of app it needs to launch.
 
 Photos you choose as a wallpaper come through the Android photo picker, which shows Quiet the
 one image you picked and nothing else in your library.
