@@ -1,16 +1,21 @@
 # Quiet Launcher privacy policy
 
-Last updated: 30 September 2026.
+Last updated: 5 October 2026.
 
 Quiet Launcher is a home screen for Android, published by **Coders Secret**. It has no account,
-no server, and no analytics.
+no server of its own, and no analytics.
 
-**Quiet collects nothing. Nothing it reads is sent anywhere by Quiet.**
+**Nothing Quiet reads on your phone, such as your apps, your notifications or your searches, is
+sent anywhere by Quiet.**
 
 The only things that ever leave Quiet are things you choose, at that moment, to hand to another
 app on your phone: a reply you type to a notification goes to the app that posted it, and a web
-search goes to your browser. Both are described below. The rest of this policy explains what
-Quiet reads on your device, why, and how to stop it.
+search goes to your browser. The one other exception is Quiet Plus, the optional subscription:
+it is bought and checked through Google Play, and Google's billing library, which is part of
+Quiet, talks to Google Play and sends its own usage logs to Google. Quiet's own code sends
+nothing else, and purchases are checked on your phone, with no server of Coders Secret's in
+between. All of these are described below. The rest of this policy explains what Quiet reads on
+your device, why, and how to stop it.
 
 ## What stays on your device
 
@@ -24,6 +29,8 @@ These are stored in Quiet's own private storage, which no other app can read:
   when it is empty, removes them immediately.
 - If, and only if, you turn on **Keep what you missed**: a record of the last 50 notifications
   Quiet saw. See below for exactly what a record holds and how to delete it.
+- If, and only if, you buy Quiet Plus: Google Play's signed receipt for it, in a file of its
+  own. See **Quiet Plus and purchases** below.
 
 When you make or rename a folder, Quiet can suggest a name from the category each app declares
 to Android, such as Games or Social. It reads those categories on your phone when it reads the
@@ -37,32 +44,38 @@ carried to a new phone. That is deliberate: a launcher that says your choices st
 should not have them arrive on the next one by themselves. The cost is that a new phone starts
 fresh, unless you carry your settings over yourself.
 
-You can: **Export to a file** in Customize, under Back up settings, writes your settings to a file
+You can: **Export to a file** in Settings, under Back up settings, writes your settings to a file
 you choose in the system's file picker, and **Import from a file** reads one back. Quiet does
 nothing with that file but write it or read it at the moment you ask, and sends it nowhere; where
 it goes from there, such as a cloud folder, is your choice and that service's policy. The file
 holds your settings, your chosen apps and your folders, from the home screen and the app
-drawer. It does not hold your widgets, your recent searches, the record of what you missed, or
-any notification.
+drawer. It does not hold your widgets, your recent searches, the record of what you missed, any
+notification, or your Quiet Plus receipt.
 
-Uninstalling Quiet deletes all of it. Quiet has no copy anywhere else, so there is nothing to
-request and nothing to delete on request.
+Uninstalling Quiet deletes all of it. Quiet keeps no copy of any of it anywhere else, so there is
+nothing of it to request and nothing of it to delete on request. A Quiet Plus purchase is the one
+record kept elsewhere: Google Play keeps the purchase, and gives Coders Secret the order details
+described under **Quiet Plus and purchases** below, which you can ask about.
 
 ## Notifications
 
 Quiet can show what is waiting on your home screen. This is **off by default** and needs two
-separate steps from you:
+separate steps from you, in this order:
 
-1. Turning **Notifications on Home** on in Customize.
-2. Granting notification access in your device's system settings, which only you can do.
+1. Granting notification access in your device's system settings, which only you can do. In
+   Quiet's Settings, under **Notifications on Home**, **Grant notification access** opens that
+   system screen.
+2. Turning on **Show notifications**, under **Notifications on Home** in Settings. It stays
+   unavailable until access is granted.
 
 With both done, Quiet reads **which app posted a notification and when**. It does not read
 message content unless you also turn on **Show message content**, which is a separate setting
 and also off by default.
 
 What Quiet reads is held in memory only, for as long as the notification is on your device.
-Turning either setting off stops the reading at once and drops what was held. Revoking
-notification access in system settings does the same.
+Turning **Show notifications** off stops the reading at once and drops what was held, and
+turning **Show message content** off does the same for message content. Revoking notification
+access in system settings stops the reading and drops what was held as well.
 
 ### Replying and actions
 
@@ -95,13 +108,15 @@ shade.
   off deletes it too, rather than merely stopping it growing.
 - Turning **Show message content** off deletes the titles and message text already in the record,
   not only the ones still to come. The app and the time stay; those are not what that switch is
-  about. Turning the notification panel off does not delete anything, because that switch says
+  about. Turning **Show notifications** off does not delete anything, because that switch says
   nothing about deleting and a control that quietly destroys what you kept is worse than the
   thing it was guarding against.
-- It is never transmitted, because Quiet has no network permission and nowhere to send it.
+- It is never transmitted. Quiet's own code has nowhere to send it, and Google's billing
+  library and the Google libraries that come with it, the only parts of Quiet that use the
+  network, are never given it.
 
-Quiet never reads notifications in order to collect, profile, or sell anything, because it does
-not collect anything at all.
+Quiet never reads notifications in order to collect, profile, or sell anything, and nothing it
+reads from them leaves your phone.
 
 ## App shortcuts in search
 
@@ -112,8 +127,50 @@ include a contact's name.
 
 Quiet reads the shortcut names only to match them against what you type. They are held in memory
 only, never written to storage and never sent anywhere. Turning **App shortcuts in search** off
-in Customize stops the reading and drops what was held. When Quiet is not your default home app,
+in Settings stops the reading and drops what was held. When Quiet is not your default home app,
 Android does not show it other apps' shortcuts at all.
+
+## Quiet Plus and purchases
+
+Quiet is free to use. Quiet Plus is an optional subscription, bought through Google Play, that
+adds extra features. Apart from the short daily check described below, nothing in this section
+happens until you open the Quiet Plus screen.
+
+- **Google Play takes the payment.** Google Play processes every purchase, under Google's own
+  terms and [Google's privacy policy](https://policies.google.com/privacy). Coders Secret never
+  sees your card or any other payment details. Like every seller on Google Play, Coders Secret
+  receives from Google Play, in its Play Console reports, the details of each order: the order
+  number, the plan bought and its price, the buyer's approximate location (country, state or
+  region, city and postal code, which Google Play takes from the payment profile) and the model
+  of the device it was bought on. Coders Secret uses them only for its accounts, for tax and to
+  look up an order if you ask for help. Questions or requests about them can be sent to the
+  address under **Contact** below.
+- **Checked on your phone.** Quiet checks each purchase on your phone, against the signature
+  Google Play puts on it. There is no server of Coders Secret's in between, and Quiet sends
+  nothing about your purchase to Coders Secret.
+- **The receipt.** If you buy Quiet Plus: Google Play's signed receipt for it (order number,
+  product, purchase time, purchase token, and whether it renews and has been confirmed), kept so
+  Plus works offline. Quiet sends it only back to Google Play, through Google's billing library,
+  to confirm and check the purchase. It is not backed up, and uninstalling deletes it. It is kept
+  in a private file of its own, apart from your settings, and is not part of **Export to a
+  file**.
+- **Google's billing library.** To sell and check Quiet Plus, Quiet includes Google Play's
+  billing library, made by Google. It talks to Google Play to show the plans and their prices,
+  to make a purchase, to confirm it, and to check whether Plus is still active. Google also has
+  the library send its own usage logs to Google, which Google describes as records of how the
+  library is used, such as whether a request worked, and of connection problems; Google does not
+  list exactly what they hold. They are handled under Google's privacy policy. Quiet's own code
+  adds nothing to them and sends nothing else.
+- **When it connects.** The library connects to Google Play when you open the Quiet Plus screen,
+  buy or restore, and at most once a day for a short check when one of Quiet's screens comes to
+  the front, so that Quiet notices a renewal, a cancellation or a refund. That check never runs
+  as your phone starts or in the first minute after Quiet starts, and Home never waits for it.
+- **Cancelling.** Uninstalling Quiet does not cancel Quiet Plus. Manage or cancel it in Google
+  Play. Your purchase history stays with Google Play, under Google's privacy policy.
+- **Review codes.** A review code entered on the Quiet Plus screen, such as the ones Coders
+  Secret gives to Google Play's app reviewers, is checked on your phone and kept only on your
+  phone, in a private file of its own that is not backed up, is not part of **Export to a file**
+  and is deleted after the code expires or when Quiet is uninstalled.
 
 ## Permissions
 
@@ -127,11 +184,19 @@ Quiet requests as little as it can:
   only lets Quiet ask: Android shows its own confirmation, and nothing is removed unless you
   agree there.
 - **Notification access**, described above, only if you grant it.
+- **Google Play billing service** (`com.android.vending.BILLING`), which Google's billing
+  library adds, so Quiet can offer Quiet Plus through Google Play. It lets Quiet ask Google Play
+  to show its purchase screen and to say whether you have Plus. It gives Quiet no access to your
+  payment details.
+- **Full network access** (`INTERNET`) and **View network connections**
+  (`ACCESS_NETWORK_STATE`), which the Google libraries that come with the billing library add, so
+  that the billing library can send its usage logs to Google, as described under **Quiet Plus
+  and purchases**. Quiet's own code does not use them.
 
-Quiet does not request internet access, contacts, calendar, location, storage, microphone,
-camera, phone, SMS, app usage statistics, or an accessibility service. It does not request
-permission to see every app installed on your device; it asks the system only about the specific
-kinds of app it needs to launch.
+Quiet does not request contacts, calendar, location, storage, microphone, camera, phone, SMS,
+app usage statistics, or an accessibility service. It does not request permission to see every
+app installed on your device; it asks the system only about the specific kinds of app it needs
+to launch.
 
 Photos you choose as a wallpaper come through the Android photo picker, which shows Quiet the
 one image you picked and nothing else in your library.
@@ -150,13 +215,16 @@ them nowhere.
 ## Children
 
 Quiet has no accounts, no content feed and no advertising, and it does not communicate with
-anyone itself: a reply you type is handed to the app that posted the notification. Quiet collects
-no data from anybody, of any age.
+anyone itself: a reply you type is handed to the app that posted the notification. Quiet's own
+code collects no data from anybody, of any age. Quiet Plus is bought through Google Play, whose
+own rules and settings decide who can make a purchase on a Google account.
 
 ## Security
 
 Everything Quiet keeps is in its own private app storage, which Android keeps from other apps.
-Quiet has no network permission, so nothing it holds can be transmitted by it.
+Quiet's own code sends nothing it holds anywhere. Quiet's network permissions come with Google's
+billing library, which uses them only for Quiet Plus and its own usage logs, as described under
+**Quiet Plus and purchases**.
 
 ## Changes
 
