@@ -130,40 +130,6 @@ only, never written to storage and never sent anywhere. Turning **App shortcuts 
 in Settings stops the reading and drops what was held. When Quiet is not your default home app,
 Android does not show it other apps' shortcuts at all.
 
-## Double tap to lock
-
-Double tap to lock is part of Quiet Plus, on Android 9 and later. With it on, a double tap on an
-empty part of your home screen turns the screen off and locks your phone. It is **off by
-default** and needs two steps from you:
-
-1. Turning on **Double tap to lock** in Quiet's Settings, under Home screen. Quiet first explains
-   what it needs, and goes on only if you choose **Agree**. **Not now** saves nothing.
-2. Switching on Quiet Launcher in Android's accessibility settings, which Quiet opens next and
-   only you can change.
-
-Android lets an app turn the screen off and lock the phone only through an accessibility
-service, so Quiet includes one whose only job is that, and uses it for nothing else. It is set up
-to receive no accessibility events and cannot see what is on your screen. It does nothing until
-you double tap an empty part of the home screen, and then asks Android to lock the phone. It
-collects nothing, stores nothing and sends nothing.
-
-When you switch the service on, Android shows its own warning about what an accessibility service
-could do in general. Depending on the Android version it asks whether to use Quiet Launcher, or
-whether to allow it full control of your device. That warning is the same for every accessibility
-service, not a description of this one. Android may
-also remind you later, with a notification of its own, that the service is on, and you can review
-or switch it off from there.
-
-Turning **Double tap to lock** off in Quiet's Settings stops it and switches the service off. If
-Quiet cannot switch it off, Quiet opens Android's accessibility settings so you can switch it off
-there, and Settings says the service is still on and offers **Open accessibility settings**, which
-Settings shows whenever the service is on, with Quiet Plus or without. You can also switch Quiet Launcher off in Android's accessibility settings at any time.
-Uninstalling Quiet removes the service entirely.
-
-Your choice is saved with your other settings and is part of **Export to a file**. The
-accessibility service is not: you switch it on on each phone, so on a phone where it is off, the
-setting reads off and a double tap does nothing but say why.
-
 ## Quiet Plus and purchases
 
 Quiet is free to use. Quiet Plus is an optional subscription, bought through Google Play, that
@@ -218,9 +184,6 @@ Quiet requests as little as it can:
   only lets Quiet ask: Android shows its own confirmation, and nothing is removed unless you
   agree there.
 - **Notification access**, described above, only if you grant it.
-- **An accessibility service**, described under **Double tap to lock** above, only if you switch
-  it on yourself in Android's accessibility settings. Quiet takes you there only after you agree
-  to its explanation. It is used for nothing but locking the phone.
 - **Google Play billing service** (`com.android.vending.BILLING`), which Google's billing
   library adds, so Quiet can offer Quiet Plus through Google Play. It lets Quiet ask Google Play
   to show its purchase screen and to say whether you have Plus. It gives Quiet no access to your
@@ -230,9 +193,10 @@ Quiet requests as little as it can:
   that the billing library can send its usage logs to Google, as described under **Quiet Plus
   and purchases**. Quiet's own code does not use them.
 
-Quiet does not request contacts, calendar, location, storage, microphone, camera, phone, SMS or
-app usage statistics. It does not request permission to see every app installed on your device;
-it asks the system only about the specific kinds of app it needs to launch.
+Quiet does not request contacts, calendar, location, storage, microphone, camera, phone, SMS,
+app usage statistics, or an accessibility service. It does not request permission to see every
+app installed on your device; it asks the system only about the specific kinds of app it needs
+to launch.
 
 Photos you choose as a wallpaper come through the Android photo picker, which shows Quiet the
 one image you picked and nothing else in your library.
